@@ -7,11 +7,6 @@ import java.net.URL;
 import java.util.jar.JarEntry;
 
 public class GUI extends JFrame {
-    private JButton button1;
-    private JPanel panel1;
-
-    private static ImageIcon img;
-
     private static JLabel theimg;
 
     public GUI(){
@@ -26,11 +21,17 @@ public class GUI extends JFrame {
 
         k.add(theimg);
         theimg.setVisible(true);
+        k.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         pack();
-        theimg.setBounds(1200, 690, 200, 200);
 
-        k.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double width = screenSize.getWidth();
+        double height = screenSize.getHeight();
+
+        theimg.setBounds((int) width - 300, (int) height - 210, 200, 200);
+
+
         k.setAlwaysOnTop(true);
         k.setVisible(true);
 
