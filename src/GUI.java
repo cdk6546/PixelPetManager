@@ -24,10 +24,12 @@ public class GUI extends JFrame {
         k.setLayout(null);
 
 
-        theimg.setBounds(1200, 690, 200, 200);
-
         k.add(theimg);
         theimg.setVisible(true);
+
+        pack();
+        theimg.setBounds(1200, 690, 200, 200);
+
         k.setExtendedState(JFrame.MAXIMIZED_BOTH);
         k.setAlwaysOnTop(true);
         k.setVisible(true);
