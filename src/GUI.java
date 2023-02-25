@@ -8,6 +8,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.jar.JarEntry;
 
+/**
+ * This is the instance of billy, which also opens the task manager
+ */
+
 public class GUI extends JFrame {
     private static JLabel theimg;
     private JLabel theSpeech;
@@ -41,6 +45,9 @@ public class GUI extends JFrame {
 
         k.setAlwaysOnTop(true);
         k.setVisible(true);
+
+        sayStuff s = new sayStuff();
+        s.createSayStuff();
 
 
     }

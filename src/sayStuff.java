@@ -3,6 +3,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Are you ready to add tasks? You click yes and it moves to next window
+ */
+
 public class sayStuff {
     private JPanel panel1;
     private JButton yesButton;
@@ -14,13 +18,13 @@ public class sayStuff {
                 JComponent comp = (JComponent) e.getSource();
                 Window win = SwingUtilities.getWindowAncestor(comp);
                 ((Window) win).dispose();
+                new iSaidYes().createIt();
 
-                new iSaidYes();
             }
         });
     }
 
-    public static void main(String[] args) {
+    public void createSayStuff() {
         JFrame frame = new JFrame("sayStuff");
         frame.setContentPane(new sayStuff().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
