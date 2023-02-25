@@ -10,10 +10,15 @@ import java.util.jar.JarEntry;
 
 public class GUI extends JFrame {
     private static JLabel theimg;
+    private JLabel theSpeech;
 
     public GUI(){
 
         JFrame k = new JFrame();
+        JFrame b = new JFrame();
+
+        JLabel theSpeech = new JLabel("Wowza");
+
         theimg = new JLabel(new ImageIcon("src/2.png"));
 
 
@@ -33,7 +38,6 @@ public class GUI extends JFrame {
         double height = screenSize.getHeight();
 
         theimg.setBounds((int) width - 300, (int) height - 210, 200, 200);
-
 
         k.setAlwaysOnTop(true);
         k.setVisible(true);
