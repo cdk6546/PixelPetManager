@@ -3,29 +3,35 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class sayStuff {
+public class PetCreator {
     private JPanel panel1;
-    private JButton yesButton;
+    private JTextField textField1;
 
-    public sayStuff() {
-        yesButton.addActionListener(new ActionListener() {
+    public String petName;
+
+    public PetCreator() {
+        textField1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                petName = textField1.getText();
+                System.out.println(petName);
+
                 JComponent comp = (JComponent) e.getSource();
                 Window win = SwingUtilities.getWindowAncestor(comp);
                 ((Window) win).dispose();
 
-                new iSaidYes();
+                new GUI();
             }
         });
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("sayStuff");
-        frame.setContentPane(new sayStuff().panel1);
+        JFrame frame = new JFrame("PetCreator");
+        frame.setContentPane(new PetCreator().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(250, 250);
         frame.setVisible(true);
+
     }
 }
+
