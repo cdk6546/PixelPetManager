@@ -23,6 +23,8 @@ public class GUI extends JFrame {
 
         theimg = new JLabel(new ImageIcon("src/" + choosePet.animalChosen + ".png"));
 
+        k.setIconImage(Main.icon.getImage());
+
         k.setUndecorated(true);
         k.setBackground(new Color(0, 0, 0, 0));
         k.setLayout(null);
