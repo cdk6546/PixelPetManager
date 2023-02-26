@@ -14,6 +14,7 @@ public class iSaidYes {
     public iSaidYes() {
 
 
+        textField1.setFont(new Font("Plain", Font.PLAIN, 17));
         textField1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,11 +42,11 @@ public class iSaidYes {
     }
 
     public void createIt(){
-        JFrame frame = new JFrame("iSaidYes");
+        JFrame frame = new JFrame(PetCreator.petName + "'s Task Manager");
         frame.setContentPane(new iSaidYes().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(250, 250);
+        frame.setSize(300, 250);
         frame.setVisible(true);
 
 

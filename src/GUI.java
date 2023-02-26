@@ -15,13 +15,9 @@ import java.util.jar.JarEntry;
 
 public class GUI extends JFrame {
     private static JLabel theimg;
-    private JLabel theSpeech;
-    public GUI(){
+    public GUI(){ // add parameter jlabel text for different images / versions
 
         JFrame k = new JFrame();
-        JFrame b = new JFrame();
-
-        JLabel theSpeech = new JLabel("Wowza");
 
         theimg = new JLabel(new ImageIcon("src/2.png"));
 
@@ -50,10 +46,16 @@ public class GUI extends JFrame {
         s.createSayStuff();
 
         k.addMouseListener(new MouseInputListener() {
+            SpeechBubble sp = new SpeechBubble();
             @Override
             public void mouseClicked(MouseEvent e) {
-                SpeechBubble b = new SpeechBubble();
-                b.createSpeech();
+                if (sp.l != null) {
+                    sp.dispose();
+                    sp.createSpeech();
+                } else {
+                    sp.newLabel();
+                    sp.createSpeech();
+                }
             }
 
             @Override

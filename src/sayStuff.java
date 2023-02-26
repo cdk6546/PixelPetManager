@@ -25,11 +25,11 @@ public class sayStuff {
     }
 
     public void createSayStuff() {
-        JFrame frame = new JFrame("sayStuff");
+        JFrame frame = new JFrame(PetCreator.petName + "'s Task Manager");
         frame.setContentPane(new sayStuff().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(250, 250);
+        frame.setSize(300, 250);
         frame.setVisible(true);
     }
 }

@@ -14,6 +14,7 @@ public class PetCreator {
     public static String petName;
 
     public PetCreator() {
+        textField1.setFont(new Font("Plain", Font.PLAIN, 17));
         textField1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,7 +31,7 @@ public class PetCreator {
     }
 
     public void creatorofPet() {
-        JFrame frame = new JFrame("PetCreator");
+        JFrame frame = new JFrame("Task Manager");
         frame.setContentPane(new PetCreator().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

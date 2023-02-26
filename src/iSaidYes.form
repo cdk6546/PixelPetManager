@@ -37,7 +37,7 @@
                 </constraints>
                 <properties>
                   <horizontalAlignment value="0"/>
-                  <text value="Enter a task:"/>
+                  <text value="Enter a task and press enter."/>
                 </properties>
               </component>
             </children>
