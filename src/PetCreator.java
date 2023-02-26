@@ -11,7 +11,7 @@ public class PetCreator {
     private JPanel panel1;
     private JTextField textField1;
 
-    public String petName;
+    public static String petName;
 
     public PetCreator() {
         textField1.addActionListener(new ActionListener() {

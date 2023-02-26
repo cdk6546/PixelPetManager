@@ -1,5 +1,3 @@
-package base;
-
 public class Task {
     private String name;
     private boolean isComplete;
