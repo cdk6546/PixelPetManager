@@ -19,7 +19,7 @@ public class GUI extends JFrame {
 
         JFrame k = new JFrame();
 
-        theimg = new JLabel(new ImageIcon("src/2.png"));
+        theimg = new JLabel(new ImageIcon("src/" + choosePet.animalChosen + ".png"));
 
 
         k.setUndecorated(true);
