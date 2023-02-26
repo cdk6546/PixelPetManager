@@ -40,6 +40,13 @@ public class iSaidYes {
 
     public void createIt(){
         JFrame frame = new JFrame(PetCreator.petName + "'s Task Manager");
+
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = screenSize.height;
+        int width = screenSize.width;
+
+        frame.setLocation(width/2 - 175, height/2 - 150);
+
         frame.setContentPane(new iSaidYes().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

@@ -10,9 +10,14 @@ public class choosePet {
     }
 
     public static void createChoosePet(){
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = screenSize.height;
+        int width = screenSize.width;
+
         JFrame frame = new JFrame("Task Manager");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocation(430, 100);
+        frame.setLocation(width/2 - 100, height/2 - 100);
+        frame.setSize(200, 125);
 
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -24,16 +29,17 @@ public class choosePet {
 
         panel.add(lbl);
 
+
+
         String[] pets = { "Fox", "Lemur", "Bear", "Deer"};
 
         final JComboBox<String> cb = new JComboBox<String>(pets);
 
         cb.setMaximumSize(cb.getPreferredSize());
         cb.setAlignmentX(Component.CENTER_ALIGNMENT);
-        //cb.setVisible(true); // Not needed
         panel.add(cb);
 
-        JButton b = new JButton("OK");
+        JButton b = new JButton("OKAY!");
         b.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(b);
 
