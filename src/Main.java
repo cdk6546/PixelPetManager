@@ -4,6 +4,7 @@
 
 public class Main {
 
+    public static VirtualPet VP = new VirtualPet(PetCreator.petName ,taskWindow.TM);
     public Main() {
 
 

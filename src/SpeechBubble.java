@@ -3,9 +3,9 @@ import java.awt.*;
 import java.awt.event.MouseListener;
 
 public class SpeechBubble extends JFrame {
-    public SpeechBubble(String text) {
+    public SpeechBubble(VirtualPet VP) {
         JPanel b = new JPanel();
-        JLabel thetext = new JLabel(text, SwingConstants.CENTER);
+        JLabel thetext = new JLabel(VP.getSaying(taskWindow.TM), SwingConstants.CENTER);
 
         b.setBackground(new Color(255, 255, 255, 100));
 
@@ -21,5 +21,5 @@ public class SpeechBubble extends JFrame {
 
         b.setVisible(true);
     }
-
 }
+

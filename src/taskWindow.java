@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 
 public class taskWindow extends JFrame{
-    private TaskManager TM = new TaskManager(iSaidYes.getTasks());
+    public static TaskManager TM = new TaskManager(iSaidYes.getTasks());
     private JPanel panel1 = new JPanel();
     private JCheckBox boxes[];
     public taskWindow() {
