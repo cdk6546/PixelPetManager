@@ -42,7 +42,6 @@ public class taskWindow extends JFrame{
             @Override
             public void stateChanged(ChangeEvent e) {
                 task.setComplete(checkBox.isSelected());
-                System.out.println(TM.getPercentage());
             }
         });
        return checkBox;

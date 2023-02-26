@@ -13,7 +13,6 @@ public class iSaidYes {
 
     public iSaidYes() {
 
-
         textField1.setFont(new Font("Plain", Font.PLAIN, 17));
         textField1.addActionListener(new ActionListener() {
             @Override
@@ -21,8 +20,6 @@ public class iSaidYes {
                 String input = textField1.getText();
                 tasks.add(new Task(input));
                 textField1.setText("");
-                System.out.println(tasks);
-
             }
         });
         allDoneButton.addActionListener(new ActionListener() {

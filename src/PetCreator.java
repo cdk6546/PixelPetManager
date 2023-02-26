@@ -19,7 +19,6 @@ public class PetCreator {
             @Override
             public void actionPerformed(ActionEvent e) {
                 petName = textField1.getText();
-                System.out.println(petName);
 
                 JComponent comp = (JComponent) e.getSource();
                 Window win = SwingUtilities.getWindowAncestor(comp);

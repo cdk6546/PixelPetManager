@@ -108,7 +108,7 @@ public class VirtualPet {
         } else if (percentage == 100) {
             Collections.addAll(P100, "You did it!!!", "Everything is completed!",
                     "“All our dreams can come true, if we have the courage to pursue them.” —Walt Disney",
-                    "ᕙ(ᵔ͡- ͡ᵔ)ᕗ", "There's nothing quite like finishing a project.", "Look at you go! You did so well.",
+                    "(╯°▽°╯)", "There's nothing quite like finishing a project.", "Look at you go! You did so well.",
                     "“A project is complete when it starts working for you, rather than you working for it.” —Scott Allen");
             this.speak = P100.get(r.nextInt(P100.size()));
         }
