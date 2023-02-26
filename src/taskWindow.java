@@ -80,7 +80,7 @@ public class taskWindow extends JFrame {
 
     public JCheckBox createCheckBox(Task task) {
         JCheckBox checkBox = new JCheckBox(task.getName());
-        checkBox.setBorder(new EmptyBorder(2, 0, 0, 0));
+        checkBox.setBorder(new EmptyBorder(1, 0, 0, 0));
         checkBox.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
