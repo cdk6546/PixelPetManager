@@ -27,6 +27,12 @@ public class sayStuff {
     public void createSayStuff() {
         JFrame frame = new JFrame(PetCreator.petName + "'s Task Manager");
         frame.setContentPane(new sayStuff().panel1);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = screenSize.height;
+        int width = screenSize.width;
+
+        frame.setLocation(width/2 - 175, height/2 - 150);
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(350, 250);

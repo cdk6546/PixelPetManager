@@ -30,11 +30,16 @@ public class PetCreator {
     }
 
     public void creatorofPet() {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = screenSize.height;
+        int width = screenSize.width;
+
         JFrame frame = new JFrame("Task Manager");
+        frame.setLocation(width / 2 - 125, height / 2 - 100);
+        frame.setSize(200, 125);
         frame.setContentPane(new PetCreator().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
 }
-

@@ -15,16 +15,19 @@ import java.util.jar.JarEntry;
 
 public class GUI extends JFrame {
     private static JLabel theimg;
+    private static JButton wowaButton;
+
     public GUI(){ // add parameter jlabel text for different images / versions
 
         JFrame k = new JFrame();
 
         theimg = new JLabel(new ImageIcon("src/" + choosePet.animalChosen + ".png"));
 
-
         k.setUndecorated(true);
         k.setBackground(new Color(0, 0, 0, 0));
         k.setLayout(null);
+
+
 
 
         k.add(theimg);
@@ -47,14 +50,23 @@ public class GUI extends JFrame {
 
         k.addMouseListener(new MouseInputListener() {
             SpeechBubble sp = new SpeechBubble();
+
             @Override
             public void mouseClicked(MouseEvent e) {
+                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                int height = screenSize.height;
+                int width = screenSize.width;
+
+
+
                 if (sp.l != null) {
                     sp.dispose();
                     sp.createSpeech();
+                    sp.setLocation(width-(width/2)-sp.getWidth()/2,50);
                 } else {
                     sp.newLabel();
                     sp.createSpeech();
+                    sp.setLocation(width-(width/2)-sp.getWidth()/2,50);
                 }
             }
 

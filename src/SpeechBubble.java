@@ -12,11 +12,13 @@ public class SpeechBubble extends JFrame {
 
     public void newLabel() {
         l = new JLabel(Main.VP.getSaying(taskWindow.TM), (int) CENTER_ALIGNMENT);
+
     }
 
     public void createSpeech(){
         setContentPane(panel1);
         l.setText(Main.VP.getSaying(taskWindow.TM));
+        setTitle("Message from " + PetCreator.petName  + "!");
         panel1.add(l);
         pack();
         setVisible(true);
