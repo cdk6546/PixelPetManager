@@ -3,23 +3,17 @@ import java.awt.*;
 import java.awt.event.MouseListener;
 
 public class SpeechBubble extends JFrame {
-    public SpeechBubble(VirtualPet VP) {
-        JPanel b = new JPanel();
-        JLabel thetext = new JLabel(VP.getSaying(taskWindow.TM), SwingConstants.CENTER);
+    public SpeechBubble() {
 
-        b.setBackground(new Color(255, 255, 255, 100));
+    }
 
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        double width = screenSize.getWidth();
-        double height = screenSize.getHeight();
-
-        b.setBounds((int) width - 400, (int) height - 190, 200, 200);
-
-        b.setSize(150, 75);
-
-        b.add(thetext);
-
+    public void createSpeech(){
+        JFrame b = new JFrame();
+        JLabel l = new JLabel(Main.VP.getSaying(taskWindow.TM), (int) CENTER_ALIGNMENT);
+        b.add(l);
         b.setVisible(true);
     }
+
 }
+
 

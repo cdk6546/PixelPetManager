@@ -52,8 +52,8 @@ public class GUI extends JFrame {
         k.addMouseListener(new MouseInputListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                SpeechBubble b = new SpeechBubble(Main.VP);
-                b.setVisible(true);
+                SpeechBubble b = new SpeechBubble();
+                b.createSpeech();
             }
 
             @Override
