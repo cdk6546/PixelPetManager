@@ -32,7 +32,7 @@ public class sayStuff {
         int width = screenSize.width;
 
         frame.setLocation(width/2 - 175, height/2 - 150);
-
+        frame.setIconImage(Main.icon.getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(350, 250);

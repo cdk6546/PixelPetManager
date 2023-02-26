@@ -17,6 +17,7 @@ public class SpeechBubble extends JFrame {
 
     public void createSpeech(){
         setContentPane(panel1);
+        setIconImage(Main.icon.getImage());
         l.setText(Main.VP.getSaying(taskWindow.TM));
         setTitle("Message from " + PetCreator.petName  + "!");
         panel1.add(l);

@@ -45,6 +45,8 @@ public class iSaidYes {
         int height = screenSize.height;
         int width = screenSize.width;
 
+        frame.setIconImage(Main.icon.getImage());
+
         frame.setLocation(width/2 - 175, height/2 - 150);
 
         frame.setContentPane(new iSaidYes().panel1);

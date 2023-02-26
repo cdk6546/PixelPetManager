@@ -10,6 +10,8 @@ public class theButton {
         JFrame buttonHolder = new JFrame();
         JButton wowaButton = new JButton();
 
+        buttonHolder.setIconImage(Main.icon.getImage());
+
         wowaButton = new JButton("Open " + PetCreator.petName + "'s new Task Manager");
 
         buttonHolder.setSize(300,100);
