@@ -31,7 +31,7 @@ public class choosePet {
 
 
 
-        String[] pets = { "Fox", "Lemur", "Bear", "Deer"};
+        String[] pets = { "Fox", "Lemur", "Bear", "Deer", "Brick"};
 
         final JComboBox<String> cb = new JComboBox<String>(pets);
 
