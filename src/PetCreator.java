@@ -35,6 +35,7 @@ public class PetCreator {
         int width = screenSize.width;
 
         JFrame frame = new JFrame("Task Manager");
+        frame.setIconImage(Main.icon.getImage());
         frame.setLocation(width / 2 - 125, height / 2 - 100);
         frame.setSize(200, 125);
         frame.setContentPane(new PetCreator().panel1);

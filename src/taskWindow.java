@@ -14,6 +14,7 @@ public class taskWindow extends JFrame {
     private JCheckBox boxes[];
 
     public taskWindow() {
+        setIconImage(Main.icon.getImage());
         panel1.setLayout(new GridLayout(iSaidYes.getTasks().size() + 1, 1));
         panel1.setBorder(new EmptyBorder(10, 10, 10, 10));
         setContentPane(panel1);

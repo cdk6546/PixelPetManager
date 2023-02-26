@@ -15,6 +15,7 @@ public class choosePet {
         int width = screenSize.width;
 
         JFrame frame = new JFrame("Task Manager");
+        frame.setIconImage(Main.icon.getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocation(width/2 - 100, height/2 - 100);
         frame.setSize(200, 125);
@@ -31,7 +32,7 @@ public class choosePet {
 
 
 
-        String[] pets = { "Fox", "Lemur", "Bear", "Deer", "Brick"};
+        String[] pets = { "Fox", "Lemur", "Bear", "Deer", "Brick", "Goose","Mini Frog"};
 
         final JComboBox<String> cb = new JComboBox<String>(pets);
 
