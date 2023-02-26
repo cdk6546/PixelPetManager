@@ -43,7 +43,7 @@ public class iSaidYes {
         frame.setContentPane(new iSaidYes().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(300, 250);
+        frame.setSize(350, 250);
         frame.setVisible(true);
 
 
