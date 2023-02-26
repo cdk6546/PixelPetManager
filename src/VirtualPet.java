@@ -78,7 +78,8 @@ public class VirtualPet {
             this.speak = P99.get(r.nextInt(P99.size()));
         } else if (percentage == 100) {
             Collections.addAll(P100, "You did it!!!", "Everything is completed!",
-                    "“All our dreams can come true, if we have the courage to pursue them.” —Walt Disney");
+                    "“All our dreams can come true, if we have the courage to pursue them.” —Walt Disney",
+                    "ᕙ(ᵔ͡- ͡ᵔ)ᕗ");
             this.speak = P100.get(r.nextInt(P100.size()));
         }
     }
