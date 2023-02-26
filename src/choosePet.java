@@ -53,8 +53,4 @@ public class choosePet {
 
 
     }
-
-    public static void main(String[] args) {
-        createChoosePet();
-    }
 }
