@@ -3,6 +3,8 @@ import javax.swing.border.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.ArrayList;
 
 
@@ -16,10 +18,8 @@ public class taskWindow extends JFrame {
         panel1.setBorder(new EmptyBorder(10, 10, 10, 10));
         setContentPane(panel1);
         JLabel text2 = new JLabel("<html>" + PetCreator.petName + "'s happiness increases as you complete each task!<br> Click on " +
-                PetCreator.petName + " to get a response from them based on their happiness.<br> You never know what you'll get!</html");
+                PetCreator.petName + " to get a response from them based on their happiness.<br> You never know what you'll get!<br><br> Tasks:</html>");
         panel1.add(text2);
-        JLabel text = new JLabel("<html><br><br><br><br>Tasks: </html>");
-        panel1.add(text);
 
         boxes = new JCheckBox[iSaidYes.getTasks().size()];
 
@@ -33,6 +33,46 @@ public class taskWindow extends JFrame {
         pack();
         setVisible(true);
         setResizable(true);
+
+        addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                theButton b = new theButton();
+                b.createButton();
+
+            }
+
+            @Override
+            public void windowClosed(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+
+            }
+        });
+
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
     }
