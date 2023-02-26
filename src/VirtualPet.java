@@ -47,7 +47,8 @@ public class VirtualPet {
                     "“The secret of getting ahead is getting started.” —Mark Twain", "I believe in you, you're strong.",
                     "The only way to reach the end is to begin.",
                     "Try not to feel pressured by the tasks ahead. Focus on them one at a time.",
-                    "We are our choices, build a great story.", "Lets start! ٩( ^ᴗ^ )۶");
+                    "We are our choices, build a great story.", "Lets start! ٩( ^ᴗ^ )۶",
+                    "The secret of getting ahead is getting started.","The worst day is the one that gets wasted for nothing.");
             this.speak = P0.get(r.nextInt(P0.size()));
         } else if (percentage <= 20) {
             Collections.addAll(P20, "Keep up the good work!", "Let’s get halfway there!",
@@ -64,7 +65,9 @@ public class VirtualPet {
                             "—Johann Wolfgang Von Goethe", "Making progress!", "Take a deep breath.",
                     "“Magic is believing in yourself. If you can make that happen, you can make anything happen.” ",
                     "Take the tasks one at a time.",
-                    "“Great things are done by a series of small things brought together. —Vincent Van Gogh");
+                    "“Great things are done by a series of small things brought together. —Vincent Van Gogh",
+                    "“Ambition is the path to success. Persistence is the vehicle you arrive in.“ — Bill Bradley",
+                    "Life is like a bicycle. To keep your balance, you must keep moving.");
             this.speak = P40.get(r.nextInt(P40.size()));
         } else if (percentage <= 47) {
             Collections.addAll(P47, "You got this!", "Keep going up the amazing work!",
@@ -77,7 +80,8 @@ public class VirtualPet {
         } else if (percentage <= 49){
             Collections.addAll(P49, "Almost half way there!", "“Impossible is just an opinion.” —Paulo Coelho",
                     "The light at the end of the tunnel is getting closer.",
-                    "Your mind will answer most of the problems if you learn to relax and focus.");
+                    "Your mind will answer most of the problems if you learn to relax and focus.",
+                    "Believe you can and you’re halfway there");
             this.speak = P49.get(r.nextInt(P49.size()));
         } else if (percentage <= 60) {
             Collections.addAll(P60, "A smart person once told me reward yourself with a sweet.",
@@ -86,7 +90,8 @@ public class VirtualPet {
                     "You are shining like sunshine on a cloudy day.",
                     "Its not about ideas. Its about making ideas happen.",
                     "“The elevator to success is out of order. You'll have to use the stairs, one step at a time.” ―Joe Girard",
-                    "When someone says you can't do it, do it twice, and take pictures.");
+                    "When someone says you can't do it, do it twice, and take pictures.",
+                    "Believe you can and you’re halfway there");
             this.speak = P60.get(r.nextInt(P60.size()));
         } else if (percentage <= 80) {
             Collections.addAll(P80, "I'm proud of you. You're getting somewhere.", "Hold the vision, trust the process.",
@@ -94,7 +99,8 @@ public class VirtualPet {
                     "If nobody has told you yet today, you look amazing.", "All the pieces are starting to fall into place...",
                     "Never let anyone treat you like a yellow starburst. You are a pink starburst.",
                     "“You're only given a little spark of madness. You mustn't lose it.” —Robin Williams",
-                    "You are making steady progress! Keep going!");
+                    "You are making steady progress! Keep going!",
+                    "Success is to wake up each morning and consciously decide that today will be the best day of your life");
             this.speak = P80.get(r.nextInt(P80.size()));
         } else if (percentage <= 99) {
             Collections.addAll(P99, "You are so close!", "“Whatever you are, be a good one.” ―Abraham Lincoln",
